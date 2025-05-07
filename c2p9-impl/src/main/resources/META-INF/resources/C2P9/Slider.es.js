@@ -1,7 +1,7 @@
-import {ReactFieldBase as FieldBase} from 'dynamic-data-mapping-form-field-type';
-import React, {useState} from 'react';
+import React, {useState} from "react";
+import {ReactFieldBase} from "@liferay/dynamic-data-mapping-form-field-type";
 
-export default function Slider({
+export function Slider({
 	label,
 	name,
 	onChange,
@@ -9,13 +9,13 @@ export default function Slider({
 	readOnly,
 	value,
 	...otherProps
-	}) {
+}) {
 	const [currentValue, setCurrentValue] = useState(
 		value ? value : predefinedValue
 	);
 
 	return (
-		<FieldBase
+		<ReactFieldBase
 			label={label}
 			name={name}
 			predefinedValue={predefinedValue}
@@ -35,6 +35,6 @@ export default function Slider({
 				type="range"
 				value={currentValue ? currentValue : predefinedValue}
 			/>
-		</FieldBase>
+		</ReactFieldBase>
 	);
 };
