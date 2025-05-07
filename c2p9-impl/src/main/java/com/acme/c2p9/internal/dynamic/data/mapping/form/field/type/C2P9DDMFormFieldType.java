@@ -20,9 +20,8 @@ import org.osgi.service.component.annotations.Reference;
 public class C2P9DDMFormFieldType extends BaseDDMFormFieldType {
 
 	@Override
-	public String getModuleName() {
-		return _npmResolver.resolveModuleName(
-			"dynamic-data-mapping-form-field-type-c2p9-slider/C2P9/Slider.es");
+	public String getESModule() {
+		return "{Slider} from dynamic-data-mapping-form-field-type-c2p9-slider";
 	}
 
 	@Override
