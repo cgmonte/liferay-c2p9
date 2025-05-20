@@ -9,7 +9,7 @@
 	"main": "./",
 	"name": "dynamic-data-mapping-form-field-type-c2p9-slider",
 	"scripts": {
-		"build": "esbuild ./src/main/resources/META-INF/resources/C2P9/Slider.es.js --outfile=./build/resources/main/META-INF/resources/__liferay__/index.js --bundle --format=esm --external:react --external:react-dom --external:@liferay/dynamic-data-mapping-form-field-type --loader:.js=jsx"
+		"build": "esbuild ./src/main/resources/META-INF/resources/C2P9/Slider.es.js --outfile=./build/resources/main/META-INF/resources/__liferay__/index.js --bundle --format=esm --external:react --external:react-dom --external:@liferay/dynamic-data-mapping-form-field-type/api --loader:.js=jsx"
 	},
 	"version": "1.0.0"
 }
